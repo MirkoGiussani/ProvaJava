@@ -14,26 +14,27 @@ public class Matrix {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner input = new Scanner(new File("matrix.txt"));
+        Scanner input = new Scanner(new File("C:\\Users\\giussani.mirko\\Desktop\\matrix.txt"));
         // pre-read in the number of rows/columns
-        int rows = 0;
-        int columns = 1;
+        int righe = 0;
+        int colonne = 1;
+        ++righe;
+        
+        String riga = input.nextLine();
+        System.out.println("la matrice ha " + righe + " righe e " + colonne + " colonne");
+        int[][] a = new int[righe][colonne];
 
-        System.out.println("matrix has " + rows + " rows and " + columns + " columns");
-        int[][] a = new int[rows][columns];
 
-        input = new Scanner(new File("matrix.txt"));
-
-        for ( ) {
-            for ( ) {
+        for (int i = 0; i < 0; i++) {
+            for (int j = 0; j < 0; j++) {
                 if (input.hasNextInt()) {
                     a[i][j] = input.;
                 }
             }
         }
 
-        for (int i = rows - 1; i >= 0; i--) {
-            for (int j = columns - 1; j >= 0; j--) {
+        for (int i = righe - 1; i >= 0; i--) {
+            for (int j = colonne - 1; j >= 0; j--) {
                 System.out.print(a[i][j] + " ");
             }
             System.out.print("\n");
