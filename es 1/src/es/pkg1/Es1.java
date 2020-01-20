@@ -15,7 +15,10 @@ public class Es1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("ciao prova");
+        do{
+            System.out.println("ciao prova");
+        }while(true);
+        
     }
     
 }
